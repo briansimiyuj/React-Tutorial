@@ -1,0 +1,7 @@
+React is a JavaScript library that allows us to create easily create Single Page Applications. This means a server needs to send a single page (let's say index.html) to the browser, and then React manages the whole website from the browser.
+
+One can still navigate to other pages but those pages will be generated from the browser and not from the server. This makes things a lot easier and faster.
+
+Install an extension called "Simple React Snippet" and enable emmet to work with React in vscode settings.
+
+Video #1
