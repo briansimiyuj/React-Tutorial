@@ -1,16 +1,13 @@
 const Home = () =>{
 
+    let name = 'Brian'
+
     const handleClick = () =>{
     
-       console.log('working')
-    
-    }
+        name = 'Simiyu'
 
-
-    const handleClickAgain = (name) =>{
-    
-       console.log(`Hello ${name}`)
-    
+        console.log(name)
+        
     }
 
 
@@ -20,13 +17,9 @@ const Home = () =>{
 
             <h2>Homepage</h2>
 
+            <p>{name}</p>
+
             <button onClick={handleClick}>Click me</button>
-
-            <button onClick={() =>{
-               
-               handleClickAgain('Brian')
-
-            }}>Click me again</button>
 
         </div>
 

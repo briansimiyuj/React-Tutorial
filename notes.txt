@@ -1,5 +1,3 @@
-When we want to create click events, we create a function inside the component function before the return statement. In this case we have created handleClick function inside the Home component (See Home.jsx ln 3). Then we reference the function on an element without the parentheses, then when the user interact with the element, the function will be invoked (See Home.jsx ln 15). 
+A State of a component is the data being used within the component.
 
-Let's say we want to pass an argument to the function, for example a name. We have to wrap the referenced function inside an anonymous function as shown in Home.jsx ln27.
-
-Video #7
+Let's create a name variable, we want to update it once a user clicks on a button as shown in Home.jsx. Even though the value changes on the handleClick function, it doesn't update in the UI. To fix this, we have to make the variable reactive by using a Hook.
