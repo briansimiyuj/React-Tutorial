@@ -1,9 +1,16 @@
-Let's say for one reason or another we don't have the node_modules directory, our React project will not work since it depends on the node_modules directory.
+A component is a self-contained section of content. For example a navbar is a component, a sidebar is a component, a footer is a component and so on.
 
-So to install node_modules directory, run the following command:
+A component has two parts:
 
-    `npm install`
+    Template - This is the markup (The HTML part)
 
-This will go through package.json and install all the dependencies that are listed there.
+    Logic - This is how the component interacts with the user (The JavaScript package).
 
-Video #3
+
+Right now we only have one component which is Script.jsx, in that component we have function called App (see Script.jsx ln 4). This function returns a code that looks like HTML but it is not. It is called JSX.
+
+JSX allows us to create HTML-like code then a package called Babel transpiles it to HTML and renders it to the DOM.
+
+The difference between JSX and HTML is that JSX uses className(carmelCase) to represent HTML classes
+
+At the end of the component, we always export the component function so that we can use it in other files (see Script.jsx ln 25)
