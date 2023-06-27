@@ -1,11 +1,7 @@
-node_modules directory is where the project's dependencies will be located including the React library itself. Any other packages that need to be installed will also be located in this directory.
+To view the project in a browser, go to the project directory and run the following command:
 
-public directory is where the project's files that are visible to the browser will be located including index.html.
+    `npm start`
 
-src directory is where 99% of the project's code will be located
+This will start a local development server on port 3000.
 
-    index.jsx is what kickstarts our project. It takes all the React components and renders them to the #root div in index.html through DOM(See index.jsx ln 6).
-
-    Script.jsx is an example of React component
-
-package.json lists all the dependencies of the project, it also lists the scripts of the project
+What is being shown in the browser is Script.jsx which is App component.
