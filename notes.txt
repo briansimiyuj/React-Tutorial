@@ -14,3 +14,5 @@ JSX allows us to create HTML-like code then a package called Babel transpiles it
 The difference between JSX and HTML is that JSX uses className(carmelCase) to represent HTML classes
 
 At the end of the component, we always export the component function so that we can use it in other files (see Script.jsx ln 25)
+
+video #3
