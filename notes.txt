@@ -1,7 +1,9 @@
-To view the project in a browser, go to the project directory and run the following command:
+Let's say for one reason or another we don't have the node_modules directory, our React project will not work since it depends on the node_modules directory.
 
-    `npm start`
+So to install node_modules directory, run the following command:
 
-This will start a local development server on port 3000.
+    `npm install`
 
-What is being shown in the browser is Script.jsx which is App component.
+This will go through package.json and install all the dependencies that are listed there.
+
+Video #3
