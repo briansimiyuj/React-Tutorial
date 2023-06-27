@@ -1,7 +1,11 @@
-To get started with React, we use a CLI tool called Create React App. In order to use it, we need to have the latest version of node js installed.
+node_modules directory is where the project's dependencies will be located including the React library itself. Any other packages that need to be installed will also be located in this directory.
 
-This Create React App tool will generate all the necessary files and directories that are needed to run React. Use the following command:
+public directory is where the project's files that are visible to the browser will be located including index.html.
 
-    `npx create-react-app ${project-name}`
+src directory is where 99% of the project's code will be located
 
-In this case we have created a project called dojo-blog in our root directory.
+    index.jsx is what kickstarts our project. It takes all the React components and renders them to the #root div in index.html through DOM(See index.jsx ln 6).
+
+    Script.jsx is an example of React component
+
+package.json lists all the dependencies of the project, it also lists the scripts of the project
