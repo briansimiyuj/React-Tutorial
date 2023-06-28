@@ -3,3 +3,5 @@ In JSX, we can output dynamic values in it like shown in Script.jsx. The only ty
 Objects properties can however be outputted.
 
 JSX converts any data type to a string before outputting it as a dynamic value
+
+We can also use these dynamic values as attributes in element tags.

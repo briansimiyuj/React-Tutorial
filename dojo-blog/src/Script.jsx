@@ -14,7 +14,9 @@ function App() {
 
   },
 
-  isOpen = false
+  isOpen = false,
+
+  link = 'http://techfybiz.co.ke'
 
 
   return (
@@ -39,6 +41,8 @@ function App() {
         <p>{[1, 2, 3, 4, 5]}</p>
 
         <p>{Math.random() * 10}</p>
+
+        <a href={link}>TechFyBiz</a>
 
       </div>
 
