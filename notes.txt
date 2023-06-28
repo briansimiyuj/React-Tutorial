@@ -1,7 +1,9 @@
-In JSX, we can output dynamic values in it like shown in Script.jsx. The only types we can't output are booleans and objects.
+Script.jsx is the root component of our project or application. This means it is the first component that gets rendered to the DOM and sits on top of the application.
 
-Objects properties can however be outputted.
+If we were to create other components, they will be nested within Script.jsx. Also children components can have other components that will be nested within them. This makes up a component tree.
 
-JSX converts any data type to a string before outputting it as a dynamic value
+Let's create a navbar component (NavBar.jsx)
 
-We can also use these dynamic values as attributes in element tags.
+We will import the NavBar in Script.jsx
+
+Then nest it in the App div as an element tag
