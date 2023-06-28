@@ -2,6 +2,8 @@ import './App.css'
 
 import NavBar from './NavBar'
 
+import Home from './Home';
+
 function App() {
 
 
@@ -12,7 +14,7 @@ function App() {
       
       <div className="content">
 
-        <h1>App Component</h1>
+        <Home/>
 
       </div>
 

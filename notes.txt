@@ -7,3 +7,7 @@ Let's create a navbar component (NavBar.jsx)
 We will import the NavBar in Script.jsx
 
 Then nest it in the App div as an element tag
+
+We also do the same thing for the Home component
+
+Video #5
