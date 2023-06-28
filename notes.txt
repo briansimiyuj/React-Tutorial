@@ -1,18 +1,5 @@
-A component is a self-contained section of content. For example a navbar is a component, a sidebar is a component, a footer is a component and so on.
+In JSX, we can output dynamic values in it like shown in Script.jsx. The only types we can't output are booleans and objects.
 
-A component has two parts:
+Objects properties can however be outputted.
 
-    Template - This is the markup (The HTML part)
-
-    Logic - This is how the component interacts with the user (The JavaScript package).
-
-
-Right now we only have one component which is Script.jsx, in that component we have function called App (see Script.jsx ln 4). This function returns a code that looks like HTML but it is not. It is called JSX.
-
-JSX allows us to create HTML-like code then a package called Babel transpiles it to HTML and renders it to the DOM.
-
-The difference between JSX and HTML is that JSX uses className(carmelCase) to represent HTML classes
-
-At the end of the component, we always export the component function so that we can use it in other files (see Script.jsx ln 25)
-
-video #3
+JSX converts any data type to a string before outputting it as a dynamic value
