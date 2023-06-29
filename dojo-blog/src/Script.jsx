@@ -1,5 +1,3 @@
-import './Script.css'
-
 import NavBar from './NavBar'
 
 import Home from './Home';
