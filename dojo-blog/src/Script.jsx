@@ -1,4 +1,4 @@
-import './App.css'
+import './Script.css'
 
 import NavBar from './NavBar'
 
