@@ -1,5 +1,1 @@
-Any styles that are in Script.css will be applied to not only the root component but also any other component which are descendants of the root component. Script.css is imported to Script.jsx
-
-style.css on the other hand will contain global styles that will be applied to everything in the project. style.css is imported to index.jsx
-
-Video #6
+When we want to create click events, we create a function inside the component function before the return statement. In this case we have created handleClick function inside the Home component (See Home.jsx ln 3). Then we invoke the function on an element without the parentheses (See Home.jsx ln 15). 
