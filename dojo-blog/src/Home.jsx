@@ -6,6 +6,14 @@ const Home = () =>{
     
     }
 
+
+    const handleClickAgain = (name) =>{
+    
+       console.log(`Hello ${name}`)
+    
+    }
+
+
     return(
 
         <div className="home">
@@ -13,6 +21,12 @@ const Home = () =>{
             <h2>Homepage</h2>
 
             <button onClick={handleClick}>Click me</button>
+
+            <button onClick={() =>{
+               
+               handleClickAgain('Brian')
+
+            }}>Click me again</button>
 
         </div>
 
