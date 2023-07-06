@@ -1,12 +1,17 @@
-const Home = () =>{
+import { useState } from 'react'
 
-    let name = 'Brian'
+const Home = () =>{ 
+
+    const [name, setName] = useState('Brian')
+
+    const [age, setAge] = useState(27)
+
 
     const handleClick = () =>{
     
-        name = 'Simiyu'
+       setName('Simiyu')
 
-        console.log(name)
+       setAge(30)
         
     }
 
@@ -17,7 +22,7 @@ const Home = () =>{
 
             <h2>Homepage</h2>
 
-            <p>{name}</p>
+            <p>{name} is {age} years old</p>
 
             <button onClick={handleClick}>Click me</button>
 

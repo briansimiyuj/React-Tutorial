@@ -1,3 +1,9 @@
 A State of a component is the data being used within the component.
 
 Let's create a name variable, we want to update it once a user clicks on a button as shown in Home.jsx. Even though the value changes on the handleClick function, it doesn't update in the UI. To fix this, we have to make the variable reactive by using a Hook.
+
+A hook is a function that allows us to add state and other React features to functional components.
+
+We have used useState hook to change the value of the name and age variables and also update it in the UI.
+
+Video #8
