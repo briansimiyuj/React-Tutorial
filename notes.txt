@@ -1,5 +1,1 @@
-Props helps us pass state from one component to another, mainly from a parent component to a child component. In this case we are passing blogs state from Home component to BlogList component (See Home.jsx ln22). Then we need to receive it inside BlogList component by adding props argument (see BlogList.jsx ln1). Props makes a component reusable. 
-
-Rather than storing the props' properties, we can also destructure the props as shown in BlogList.jsx ln1.
-
-Video #11
+Video #12
