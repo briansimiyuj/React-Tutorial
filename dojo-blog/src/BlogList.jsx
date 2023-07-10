@@ -1,7 +1,4 @@
-const BlogList = ( {blogs, title} ) =>{
-
-    console.log(blogs, title)
-
+const BlogList = ( {blogs, title, blogDelete} ) =>{
 
     return(
 
@@ -20,6 +17,8 @@ const BlogList = ( {blogs, title} ) =>{
                         <h2>{blog.title}</h2>
 
                         <p>Written by {blog.author}</p>
+
+                        <button onClick={() => blogDelete(blog.id)}>Delete Blog</button>
 
                     </div>
 
