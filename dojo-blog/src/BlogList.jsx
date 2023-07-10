@@ -1,10 +1,6 @@
-const BlogList = (props) =>{
+const BlogList = ( {blogs, title} ) =>{
 
-    const blogs = props.blogs,
-
-         title = props.title
-
-    console.log(props, blogs)
+    console.log(blogs, title)
 
 
     return(
@@ -13,7 +9,7 @@ const BlogList = (props) =>{
 
             <h2>{title}</h2>
 
-            
+
 
          {
 
