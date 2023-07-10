@@ -1,3 +1,5 @@
-Search for React Developers Tools on both Chrome and Firefox and install the extension. React Developer Tools helps us to debug react applications in the browser.
+We can use JavaScript inside templates by surrounding it with {} as shown in Home.jsx ln20.
 
-Video #9
+Key property helps React to keep track of each item in the DOM as it outputs it. It's like an ID.
+
+Video #10
