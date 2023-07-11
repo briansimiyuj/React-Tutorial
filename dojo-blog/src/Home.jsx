@@ -15,7 +15,7 @@ const Home = () =>{
     ])
 
 
-    const [name, SetName] = useState('Brian')
+    const [name, setName] = useState('Brian')
     
 
     const blogDelete = (id) =>{
@@ -42,7 +42,7 @@ const Home = () =>{
 
           <BlogList blogs={blogs} title='All blogs!' blogDelete={blogDelete}/>
 
-          <button onClick={() => SetName('Juma')}>Change name</button>
+          <button onClick={() => setName('Juma')}>Change name</button>
 
           <p>{name}</p>
 
