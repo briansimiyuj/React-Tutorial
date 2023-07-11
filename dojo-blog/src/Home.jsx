@@ -13,6 +13,9 @@ const Home = () =>{
         { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
 
     ])
+
+
+    const [name, SetName] = useState('Brian')
     
 
     const blogDelete = (id) =>{
@@ -28,9 +31,9 @@ const Home = () =>{
 
         console.log('Use effect ran!')
 
-        console.log(blogs)
+        console.log(name)
 
-    }, [])
+    }, [name])
 
 
     return(
@@ -38,6 +41,10 @@ const Home = () =>{
         <div className="home">
 
           <BlogList blogs={blogs} title='All blogs!' blogDelete={blogDelete}/>
+
+          <button onClick={() => SetName('Juma')}>Change name</button>
+
+          <p>{name}</p>
 
         </div>
 

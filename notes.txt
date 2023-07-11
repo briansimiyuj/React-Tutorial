@@ -5,3 +5,7 @@ We can also access states in useEffect but it is not recommended to change it si
 Sometimes we may not want to run a function after every single render, but only after a specific render. To do that, we need to use a dependancy array.
 
 We use dependancy array as a second argument in the useEffect function (See Home.jsx ln33). In the example, the empty array makes sure useEffect only runs once(the first render).
+
+Now we have a dependancy array that has an item (name). Therefore useEffect will run after the first render and only when the name changes. Thus name is a dependancy (see Home.jsx ln36).
+
+Video #15
