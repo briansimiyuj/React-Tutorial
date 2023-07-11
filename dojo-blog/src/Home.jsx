@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import BlogList from './BlogList'
 
@@ -22,6 +22,15 @@ const Home = () =>{
        setBlogs(newBlogs)
     
     }
+
+
+    useEffect(() =>{
+
+        console.log('Use effect ran!')
+
+        console.log(blogs)
+
+    })
 
 
     return(

@@ -1,1 +1,5 @@
-Video #13
+useEffect is a hook that runs a set of code every time a component is rendered. It's more like a function (See Home.jsx ln27). Whenever we interact with the UI, useEffect runs.
+
+We can also access states in useEffect but it is not recommended to change it since we could end up in endless loop of rendering. 
+
+Video #14
