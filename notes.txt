@@ -1,11 +1,15 @@
-useEffect is a hook that runs a set of code every time a component is rendered. It's more like a function (See Home.jsx ln27). Whenever we interact with the UI, useEffect runs.
+Most of the time we won't have the state we need in our React application like the one we created for blogs. So we have to fetch it from a database.
 
-We can also access states in useEffect but it is not recommended to change it since we could end up in endless loop of rendering. 
+Let's create a mini database (./database/database.json). We will then watch the database using a JSON server. Use the following command to run JSON server:
 
-Sometimes we may not want to run a function after every single render, but only after a specific render. To do that, we need to use a dependancy array.
+    `npx json-server --watch ${databaseDirectory/databaseFile.json} --port ${portNumber}`.
 
-We use dependancy array as a second argument in the useEffect function (See Home.jsx ln33). In the example, the empty array makes sure useEffect only runs once(the first render).
+JSON server wraps the database with API end points which are:
 
-Now we have a dependancy array that has an item (name). Therefore useEffect will run after the first render and only when the name changes. Thus name is a dependancy (see Home.jsx ln36).
+    i. /blogs  GET                This fetches all blogs.
+    ii. /blogs/{id}  GET          This fetches a single blog.
+    iii. /blogs/   POST           This adds a new blog.
+    iv. /blogs/{id} DELETE        This deletes a blog.
 
-Video #15
+
+Video #16
