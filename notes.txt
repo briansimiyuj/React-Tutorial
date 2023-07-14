@@ -1,15 +1,5 @@
-Most of the time we won't have the state we need in our React application like the one we created for blogs. So we have to fetch it from a database.
+We retrieved the blogs from our mini database in the useEffect hook as shown in Home.jsx ln 22. We have to update the state with the new set of blogs (Home.jsx ln 34).
 
-Let's create a mini database (./database/database.json). We will then watch the database using a JSON server. Use the following command to run JSON server:
+We cannot simply include the BlogList component within the home component without considering the current state (Home.jsx ln 45). This is because the blogs prop is currently null, which means we cannot iterate through it using the map method (BlogList.jsx ln 13). Therefore, we need to implement conditional templating on the BlogList component.
 
-    `npx json-server --watch ${databaseDirectory/databaseFile.json} --port ${portNumber}`.
-
-JSON server wraps the database with API end points which are:
-
-    i. /blogs  GET                This fetches all blogs.
-    ii. /blogs/{id}  GET          This fetches a single blog.
-    iii. /blogs/   POST           This adds a new blog.
-    iv. /blogs/{id} DELETE        This deletes a blog.
-
-
-Video #16
+Video #17
