@@ -1,5 +1,3 @@
-We retrieved the blogs from our mini database in the useEffect hook as shown in Home.jsx ln 22. We have to update the state with the new set of blogs (Home.jsx ln 34).
+Most of the times we have to retrieve data from a database or a server over the internet. Therefore, we have to create a loading message while the data is being retrieved. (See Home.jsx)
 
-We cannot simply include the BlogList component within the home component without considering the current state (Home.jsx ln 45). This is because the blogs prop is currently null, which means we cannot iterate through it using the map method (BlogList.jsx ln 13). Therefore, we need to implement conditional templating on the BlogList component.
-
-Video #17
+Video #18

@@ -6,22 +6,30 @@ const Home = () =>{
 
     const [blogs, setBlogs] = useState(null)
 
+    const [isPending, setIsPending] = useState(true)
+
 
     useEffect(() =>{
 
-        fetch('http://localhost:8000/blogs')
+        setTimeout(() => {
+            
+            fetch('http://localhost:8000/blogs')
 
-            .then(response =>{
+                .then(response =>{
 
-                return response.json()
-
-            })
-
-                .then(data =>{
-
-                    setBlogs(data)
+                    return response.json()
 
                 })
+
+                    .then(data =>{
+
+                        setBlogs(data)
+
+                        setIsPending(false)
+
+                    })
+
+        }, 1000)
 
     }, [])
 
@@ -29,6 +37,8 @@ const Home = () =>{
     return(
 
         <div className="home">
+
+            { isPending && <p>Loading...</p> }
 
           {blogs && <BlogList blogs={blogs} title='All blogs!'/>}
 
