@@ -15,7 +15,7 @@ const Home = () =>{
 
         setTimeout(() => {
             
-            fetch('http://localhost:8000/bloogs')
+            fetch('http://localhost:8000/blogs')
 
                 .then(response =>{
 
