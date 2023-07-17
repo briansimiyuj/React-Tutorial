@@ -8,14 +8,23 @@ const Home = () =>{
 
     const [isPending, setIsPending] = useState(true)
 
+    const [error, setError] = useState(null)
+
 
     useEffect(() =>{
 
         setTimeout(() => {
             
-            fetch('http://localhost:8000/blogs')
+            fetch('http://localhost:8000/bloogs')
 
                 .then(response =>{
+
+                    if(!response.ok){
+
+                        throw Error(`Couldn't connect to the server`)
+
+                    }
+
 
                     return response.json()
 
@@ -27,11 +36,15 @@ const Home = () =>{
 
                         setIsPending(false)
 
+                        setError(null)
+
                     })
 
                         .catch(err =>{
 
-                            console.log(err.message)
+                            setIsPending(false)
+
+                            setError(err.message)
 
                         })
 
@@ -43,6 +56,8 @@ const Home = () =>{
     return(
 
         <div className="home">
+
+            { error && <p>{error}</p> }
 
             { isPending && <p>Loading...</p> }
 
