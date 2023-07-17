@@ -1,1 +1,9 @@
-Video #19
+A custom hook is a reusable function that allows us to share logic between components, for example the logic we have created in useEffect hook. We can use it in other components like BlogList.
+
+A hook must always start with the word 'use'.
+
+We have created a custom hook called useFetch (useFetch.jsx) and transferred all the logic from Home component.
+
+Let's now import it to Home component (Home.jsx ln 6).
+
+Video #20
