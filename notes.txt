@@ -1,4 +1,4 @@
-A custom hook is a reusable function that allows us to share logic between components, for example the logic we have created in useEffect hook. We can use it in other components like BlogList.
+A custom hook is a reusable function that allows us to share logic between components, for example the logic we have created in useEffect hook. We can use it in other components like Home.
 
 A hook must always start with the word 'use'.
 
