@@ -1,3 +1,1 @@
-Most of the times we have to retrieve data from a database or a server over the internet. Therefore, we have to create a loading message while the data is being retrieved. (See Home.jsx)
-
-Video #18
+Video #19

@@ -29,6 +29,12 @@ const Home = () =>{
 
                     })
 
+                        .catch(err =>{
+
+                            console.log(err.message)
+
+                        })
+
         }, 1000)
 
     }, [])
