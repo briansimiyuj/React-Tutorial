@@ -1,9 +1,9 @@
-A custom hook is a reusable function that allows us to share logic between components, for example the logic we have created in useEffect hook. We can use it in other components like Home.
+In a non-React website, the typical flow involves the browser sending a request to the server, which in turn responds with an HTML page. When a user moves to a different page, the browser once again sends a request to the server, which responds by sending back the HTML page.
 
-A hook must always start with the word 'use'.
+In React, the browser sends a single request to the server, and in response, the server provides an almost empty HTML page. Subsequently, React dynamically populates this page with the necessary content. When a user navigates to a different page, instead of sending a request to the server, the React router intercepts the request and injects the required content directly into the new page. This makes the website much faster and efficient.
 
-We have created a custom hook called useFetch (useFetch.jsx) and transferred all the logic from Home component.
+To do this we need to install React router package. Use the following command to install:
 
-Let's now import it to Home component (Home.jsx ln 6).
+    `npm install react-router-dom@${versionNumber}`, in this case we use version 5.
 
-Video #20
+Video #21
