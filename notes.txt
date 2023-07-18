@@ -1,9 +1,7 @@
-In a non-React website, the typical flow involves the browser sending a request to the server, which in turn responds with an HTML page. When a user moves to a different page, the browser once again sends a request to the server, which responds by sending back the HTML page.
+Now let's go to the root component and import it (Script.jsx ln 5). Then surround the entire application with Router component (Script.jsx ln 11).
 
-In React, the browser sends a single request to the server, and in response, the server provides an almost empty HTML page. Subsequently, React dynamically populates this page with the necessary content. When a user navigates to a different page, instead of sending a request to the server, the React router intercepts the request and injects the required content directly into the new page. This makes the website much faster and efficient.
+All the routes goes inside the Switch component (Script.jsx ln 19). We create a Route for each page in the application using the Router component.
 
-To do this we need to install React router package. Use the following command to install:
-
-    `npm install react-router-dom@${versionNumber}`, in this case we use version 5.
+In JSX, the Route element includes a path attribute that specifies the page link (Script.jsx ln21). We then proceed to nest the Home component within it.
 
 Video #21
