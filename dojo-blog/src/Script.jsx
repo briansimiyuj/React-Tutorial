@@ -4,6 +4,8 @@ import Home from './Home'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
+import Create from './Create'
+
 function App() {
 
   return(
@@ -12,21 +14,29 @@ function App() {
 
       <div className="App">
 
-      <NavBar/>
+        <NavBar/>
 
-      <div className="content">
 
-        <Switch>
+        <div className="content">
 
-          <Route path="/">
+          <Switch>
 
-            <Home/>
+            <Route exact path="/">
 
-          </Route>
+              <Home/>
 
-        </Switch>
+            </Route>
 
-      </div>
+            
+            <Route path="/create">
+
+              <Create/>
+
+            </Route>
+
+          </Switch>
+
+        </div>
 
       </div>
 

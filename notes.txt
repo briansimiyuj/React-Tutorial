@@ -1,7 +1,5 @@
-Now let's go to the root component and import it (Script.jsx ln 5). Then surround the entire application with Router component (Script.jsx ln 11).
+We have created a new component (Create.jsx) and nested it within a new Route with a path of '/create' (Home.jsx ln 31).
 
-All the routes goes inside the Switch component (Script.jsx ln 19). We create a Route for each page in the application using the Router component.
+But when we navigate to the new path ('/create'), we see the same content that is in the Home component. This is because '/create' matches with '/' which is also the path to the Home component. To prevent this, we need to add the "exact" prop to the Route element of the Home component (Home.jsx ln 24). This means match this path if it's the exact url we navigate to.
 
-In JSX, the Route element includes a path attribute that specifies the page link (Script.jsx ln21). We then proceed to nest the Home component within it.
-
-Video #21
+Video #22
