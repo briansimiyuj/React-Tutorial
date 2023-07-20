@@ -1,7 +1,9 @@
-We have created a new component (Create.jsx) and nested it within a new Route with a path of '/create' (Home.jsx ln 31).
+Currently when we click on page links, it still sends requests to the server for a new page and React Router is not intercepting them as mentioned earlier. To fix this, we need to use a special link tag.
 
-But when we navigate to the new path ('/create'), we see the same content that is in the Home component. This is because '/create' matches with '/' which is also the path to the Home component. To prevent this, we need to add the "exact" prop to the Route element of the Home component (Home.jsx ln 24). This means match this path if it's the exact url we navigate to.
+Let's import the link tag in the NavBar component (NavBar.jsx ln 1). Then we replace the anchor tags with Link tags. Link tags have a "to" attribute just like the anchor tags have a "href" attribute (NavBar.jsx ln 14).
 
-Switch component makes sure only one route is shown in the browser at any given time.
+When we inspect the Link elements in the browser, they are shown as anchor tags. 
 
-Video #22
+These Link tags are the ones that intercept the requests from going to the server and makes the website much faster.
+
+Video #23
