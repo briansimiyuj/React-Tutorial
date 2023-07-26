@@ -1,9 +1,3 @@
-Currently when we click on page links, it still sends requests to the server for a new page and React Router is not intercepting them as mentioned earlier. To fix this, we need to use a special link tag.
+Sometimes we need to pass dynamic values as a part of a Route. We call these dynamic values as Route Parameters. We have created a BlogDetails component (BlogDetails.jsx) and we have setup a Route for it in Script.jsx ln40. The Route path is "/blog/:id". The 'id is the Route parameter.
 
-Let's import the link tag in the NavBar component (NavBar.jsx ln 1). Then we replace the anchor tags with Link tags. Link tags have a "to" attribute just like the anchor tags have a "href" attribute (NavBar.jsx ln 14).
-
-When we inspect the Link elements in the browser, they are shown as anchor tags. 
-
-These Link tags are the ones that intercept the requests from going to the server and makes the website much faster.
-
-Video #23
+Video #25
