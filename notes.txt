@@ -1,5 +1,1 @@
-Sometimes we need to pass dynamic values as a part of a Route. We call these dynamic values as Route Parameters. We have created a BlogDetails component (BlogDetails.jsx) and we have setup a Route for it in Script.jsx ln40. The Route path is "/blog/:id". The 'id is the Route parameter.
-
-useParams (BlogDetails.jsx ln5) hook helps us grab parameters from the route.
-
-Video #25
+Video #26
