@@ -1,1 +1,15 @@
-Video #27
+Controlled inputs helps us to set up input fields in a form so that we can track their values and store them in some state.
+
+We have added a form with some inputs to the Create component to (Create.jsx ln15)
+
+-useState hook creates title state variable to track user input.
+
+value prop of the input element is connected to title to display current value in the input field (Create.jsx ln22).
+
+onChange event triggers setTitle function to update title state with user input (Create.jsx ln23).
+
+We do the same thing for body and author inputs.
+
+Controlled inputs effectively manage form fields and user input in React.
+
+video #27
