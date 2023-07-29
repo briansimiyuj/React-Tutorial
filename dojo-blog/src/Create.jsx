@@ -9,6 +9,17 @@ const Create = () =>{
           [author, setAuthor] = useState('mario')
 
 
+    const handleSubmit = (e) =>{
+    
+        e.preventDefault()
+        
+        const blog = { title, body, author }
+        
+        console.log(blog)
+    
+    }
+
+
     return(
 
         <div className="create">
@@ -16,7 +27,7 @@ const Create = () =>{
             <h2>Add a New Blog</h2>
 
 
-            <form>
+            <form onSubmit={handleSubmit}>
 
                 <label>Blog title:</label>
 
