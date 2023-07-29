@@ -1,1 +1,13 @@
-Video #28
+We need to make a POST request to JSON server to add the data being submitted by a user to our mini database.
+
+First we need to make a fetch request to our database. (Create.jsx ln23)
+
+{ method: "POST" }: This part of the code specifies the HTTP method used for the request, which is POST. It means that the request is intended to create a new resource on the server. (Create.jsx ln25)
+
+headers: { "Content-Type": "application/json" }: This line sets the headers for the request. The "Content-Type" header is set to "application/json," indicating that the data sent in the request body is in JSON format. (Create.jsx ln27)
+
+body: JSON.stringify(blog): Here, the blog object is being converted to a JSON string using JSON.stringify(). The JSON data will be sent as the payload in the request body. The server will receive and parse this JSON data to process the new blog post. (Create.jsx ln29)
+
+We have added a new blog to our mini database.
+
+Video #29
