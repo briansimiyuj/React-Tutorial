@@ -1,5 +1,3 @@
-When a new blog is added, it would be convenient if we redirect the user to the homepage (Home component). To do that, we can use useHistory hook (Create.jsx ln15). To go forward we use history.go(1), to go backward we use history.go(-1).
+Let's now delete a blog.
 
-To go to homepage, refer Create.jsx ln45.
-
-Video #30
+Video #31
